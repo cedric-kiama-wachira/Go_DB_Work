@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-export DBUSER=username
-export DBPASS=password
+export DBUSER=goadmin
+export DBPASS=goadminpass
