@@ -61,7 +61,14 @@ func main() {
 	    log.Fatal(err)
     }
     fmt.Printf("Albums found: %v\n", albums)
+    
+    // Hard-code ID 2 here to test the query.
+    alb, err := albumByID(2)
+    if err != nil {
+	    log.Fatal(err)
     }
+    fmt.Printf("Album found: %v\n", alb)
+}
 
 // albumsByArtist queries for albums that have the specified artist name.
 func albumsByArtist(name string) ([]Album, error) {
