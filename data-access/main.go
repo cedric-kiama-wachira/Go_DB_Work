@@ -68,6 +68,15 @@ func main() {
 	    log.Fatal(err)
     }
     fmt.Printf("Album found: %v\n", alb)
+    albID, err := addAlbum(Album{
+	    Title:  "The Modern Sound of Betty Carter",
+	    Artist: "Betty Carter",
+	    Price:  49.99,
+    })
+    if err != nil {
+	    log.Fatal(err)
+    }
+    fmt.Printf("ID of added album: %v\n", albID)
 }
 
 // albumsByArtist queries for albums that have the specified artist name.
