@@ -18,7 +18,13 @@
 
 package main
 
-import "github.com/go-sql-driver/mysql"
+import (
+         "database/sql"
+         "fmt"
+         "log"
+         "os"
+	"github.com/go-sql-driver/mysql"
+)
 var db *sql.DB
 
 func main() {
